@@ -1,0 +1,1251 @@
+html {
+  font-size: 62.5%;
+}
+
+html body .main-background-image {
+  background-image: url("/image/main-background-image.jpg");
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+html body main {
+  font-family: "Hannari";
+}
+
+html body main .common-title {
+  padding-top: 230px;
+  padding-bottom: 165px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fffffe;
+}
+
+@media screen and (max-width: 1200px) {
+  html body main .common-title {
+    padding-top: 120px;
+    padding-bottom: 90px;
+  }
+}
+
+html body main .eyecatch {
+  margin-bottom: 50px;
+  padding-bottom: 80px;
+  margin-bottom: 0;
+  font-family: 'Caveat', "cursive";
+  text-transform: uppercase;
+  color: #fffffe;
+}
+
+html body main .eyecatch .top-background-image {
+  background-image: url("/image/eyecatch-background-image.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 950px;
+  width: 100%;
+  font-size: 100px;
+  text-align: left;
+}
+
+@media screen and (max-width: 1200px) {
+  html body main .eyecatch .top-background-image {
+    background-image: url("/image/eyecatch-background-image-phone.jpg");
+    height: 800px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html body main .eyecatch .top-background-image {
+    height: 700px;
+  }
+}
+
+html body main .eyecatch .top-background-image p {
+  font-family: "Hannari";
+  font-size: 2.5vw;
+  line-height: 4vw;
+  padding-left: 5%;
+  font-family: 'Yomogi', cursive;
+  opacity: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  html body main .eyecatch .top-background-image p {
+    font-size: 3.6vw;
+    line-height: 5.3vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html body main .eyecatch .top-background-image p {
+    font-size: 4vw;
+    line-height: 5.3vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html body main .eyecatch .top-background-image p {
+    font-size: 4vw;
+    line-height: 5.5vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  html body main .eyecatch .top-background-image p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+html body main .eyecatch .top-background-image .first {
+  padding-top: 200px;
+}
+
+@media screen and (max-width: 1200px) {
+  html body main .eyecatch .top-background-image .first {
+    padding-top: 100px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html body main .eyecatch .top-background-image .first {
+    padding-top: 75px;
+  }
+}
+
+html body main .eyecatch .top-background-image .third {
+  padding-top: 70px;
+}
+
+html body main .introduction {
+  background-color: #0F0F0F;
+  margin-bottom: 50px;
+  padding-bottom: 80px;
+}
+
+html body main .introduction i {
+  font-size: 60px;
+}
+
+@media screen and (max-width: 600px) {
+  html body main .introduction i {
+    font-size: 35px;
+  }
+}
+
+html body main .introduction h1 {
+  font-size: 60px;
+  padding-left: 10px;
+  font-family: 'Caveat', "cursive";
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  html body main .introduction h1 {
+    font-size: 35px;
+  }
+}
+
+html body main .introduction .myimage {
+  text-align: center;
+}
+
+html body main .introduction .myimage img {
+  width: 300px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 900px) {
+  html body main .introduction .myimage img {
+    width: 250px;
+  }
+}
+
+html body main .introduction .common-container .common-subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  color: #fffffe;
+}
+
+html body main .introduction .common-container .common-subtitle i {
+  font-size: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  html body main .introduction .common-container .common-subtitle i {
+    font-size: 28px;
+  }
+}
+
+html body main .introduction .common-container .common-subtitle h2 {
+  font-size: 40px;
+  padding-left: 7px;
+  font-family: 'Caveat', "cursive";
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  html body main .introduction .common-container .common-subtitle h2 {
+    font-size: 28px;
+  }
+}
+
+html body main .introduction .common-container .description-textbox {
+  padding: 20px 5% 40px;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 5px #dfdddd;
+          box-shadow: 0 0 5px #dfdddd;
+  border-radius: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 80%;
+  box-shadow: 0 0 5px #dfdddd;
+}
+
+html body main .introduction .common-container .description-textbox .first p:nth-child(2) {
+  font-size: 17px;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  html body main .introduction .common-container .description-textbox .first p:nth-child(2) {
+    font-size: 1.6vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html body main .introduction .common-container .description-textbox .first p:nth-child(2) {
+    font-size: 2.1vw;
+  }
+}
+
+html body main .introduction .common-container .description-textbox .description {
+  text-align: center;
+  color: #e6e6e6;
+}
+
+html body main .introduction .common-container .description-textbox .description p {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+  html body main .introduction .common-container .description-textbox .description p {
+    font-size: 1.8vw;
+    line-height: 3vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html body main .introduction .common-container .description-textbox .description p {
+    font-size: 2.3vw;
+    line-height: 3.4vw;
+  }
+}
+
+html body main .introduction .common-container .description-textbox .description p span {
+  color: red;
+}
+
+html body main .introduction .common-container .description-textbox .description p:nth-child(2) {
+  line-height: 1vw;
+}
+
+@media screen and (max-width: 1200px) {
+  html body main .introduction .common-container .description-textbox .description p:nth-child(2) {
+    line-height: 1.8vw;
+  }
+}
+
+html body main .myskill {
+  background-color: #0F0F0F;
+  margin-bottom: 50px;
+  padding-bottom: 80px;
+}
+
+html body main .myskill i {
+  font-size: 60px;
+}
+
+@media screen and (max-width: 600px) {
+  html body main .myskill i {
+    font-size: 35px;
+  }
+}
+
+html body main .myskill h1 {
+  font-size: 60px;
+  padding-left: 10px;
+  font-family: 'Caveat', "cursive";
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  html body main .myskill h1 {
+    font-size: 35px;
+  }
+}
+
+html body main .myskill .skill-container {
+  padding-top: 50px;
+  padding-bottom: 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 5px #dfdddd;
+          box-shadow: 0 0 5px #dfdddd;
+  border-radius: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+}
+
+@media screen and (max-width: 900px) {
+  html body main .myskill .skill-container {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+  }
+}
+
+html body main .myskill .skill-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 3%;
+  padding-right: 3%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+html body main .myskill .skill-container ul li {
+  width: 250px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  html body main .myskill .skill-container ul li {
+    width: 150px;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html body main .myskill .skill-container ul li {
+    width: 100px;
+    margin-left: 10px;
+  }
+}
+
+html body main .myskill .skill-container ul li .image-wrapper {
+  background-color: #e9e8e8;
+  width: auto;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  -webkit-box-shadow: 0 0 30px #dfdddd;
+          box-shadow: 0 0 30px #dfdddd;
+}
+
+@media screen and (max-width: 1200px) {
+  html body main .myskill .skill-container ul li .image-wrapper {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html body main .myskill .skill-container ul li .image-wrapper {
+    height: 80px;
+  }
+}
+
+html body main .myskill .skill-container ul li .image-wrapper img {
+  width: 100%;
+}
+
+html body main .myskill .skill-container ul li .level-wrapper {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 25px;
+}
+
+html body main .myskill .skill-container ul li .level-wrapper p {
+  color: #e6e6e6;
+  font-size: 1vw;
+}
+
+@media screen and (max-width: 1200px) {
+  html body main .myskill .skill-container ul li .level-wrapper p {
+    font-size: 1.3vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html body main .myskill .skill-container ul li .level-wrapper p {
+    font-size: 1.6vw;
+  }
+}
+
+html body main .strength {
+  background-color: #0F0F0F;
+  margin-bottom: 50px;
+  padding-bottom: 80px;
+}
+
+html body main .strength i {
+  font-size: 60px;
+}
+
+@media screen and (max-width: 600px) {
+  html body main .strength i {
+    font-size: 35px;
+  }
+}
+
+html body main .strength h1 {
+  font-size: 60px;
+  padding-left: 10px;
+  font-family: 'Caveat', "cursive";
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  html body main .strength h1 {
+    font-size: 35px;
+  }
+}
+
+html body main .strength .strength-container {
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 5px #dfdddd;
+          box-shadow: 0 0 5px #dfdddd;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  html body main .strength .strength-container {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+  }
+}
+
+html body main .strength .strength-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+html body main .strength .strength-container ul li {
+  width: 80%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+html body main .strength .strength-container ul li:nth-child(n + 2) {
+  margin-left: 5%;
+}
+
+html body main .strength .strength-container ul li .strength-subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+html body main .strength .strength-container ul li .strength-subtitle::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 12px;
+  height: 1px;
+  text-align: center;
+  background-color: #ededf1;
+}
+
+html body main .strength .strength-container ul li .strength-subtitle p {
+  padding-left: 7px;
+  font-size: 1.6vw;
+  color: #e6e6e6;
+}
+
+@media screen and (max-width: 1200px) {
+  html body main .strength .strength-container ul li .strength-subtitle p {
+    font-size: 1.9vw;
+  }
+}
+
+html body main .strength .strength-container ul li .strength-subtitle i {
+  font-size: 1.6vw;
+  color: #e6e6e6;
+}
+
+@media screen and (max-width: 1200px) {
+  html body main .strength .strength-container ul li .strength-subtitle i {
+    font-size: 1.9vw;
+  }
+}
+
+html body main .strength .strength-container ul li .descripion-textbox {
+  padding-top: 20px;
+}
+
+html body main .strength .strength-container ul li .descripion-textbox p {
+  font-size: 1.2vw;
+  line-height: 2.7vw;
+  color: #e6e6e6;
+}
+
+@media screen and (max-width: 1200px) {
+  html body main .strength .strength-container ul li .descripion-textbox p {
+    font-size: 1.5vw;
+    line-height: 3vw;
+  }
+}
+
+html body main .works {
+  background-color: #0F0F0F;
+  margin-bottom: 50px;
+  padding-bottom: 80px;
+  color: #fffffe;
+}
+
+html body main .works i {
+  font-size: 60px;
+}
+
+@media screen and (max-width: 600px) {
+  html body main .works i {
+    font-size: 35px;
+  }
+}
+
+html body main .works h1 {
+  font-size: 60px;
+  padding-left: 10px;
+  font-family: 'Caveat', "cursive";
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  html body main .works h1 {
+    font-size: 35px;
+  }
+}
+
+html body main .works .works-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 84%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+@media screen and (max-width: 1200px) {
+  html body main .works .works-container {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html body main .works .works-container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  html body main .works .works-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0 0 5px #dfdddd;
+            box-shadow: 0 0 5px #dfdddd;
+    border-radius: 10px;
+  }
+}
+
+html body main .works .works-container .portfolio {
+  width: 40%;
+}
+
+@media screen and (max-width: 1200px) {
+  html body main .works .works-container .portfolio {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html body main .works .works-container .portfolio {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html body main .works .works-container .portfolio {
+    width: 100%;
+  }
+}
+
+html body main .works .works-container .portfolio:first-child {
+  margin-right: 3%;
+}
+
+@media screen and (max-width: 1200px) {
+  html body main .works .works-container .portfolio:first-child {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+}
+
+html body main .works .works-container .portfolio:last-child {
+  margin-left: 3%;
+}
+
+@media screen and (max-width: 1200px) {
+  html body main .works .works-container .portfolio:last-child {
+    margin-left: 0;
+  }
+}
+
+html body main .works .works-container .portfolio a {
+  text-decoration: none;
+  display: block;
+  position: relative;
+}
+
+html body main .works .works-container .portfolio a::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  width: 0;
+  display: block;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  background-color: rgba(239, 240, 243, 0.9);
+}
+
+html body main .works .works-container .portfolio a:hover::before {
+  width: 100%;
+}
+
+html body main .works .works-container .portfolio a .portfolio-background-image {
+  background-image: url("/image/myportfolio-screenshot.png");
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  -webkit-box-shadow: 0 0 30px #dfdddd;
+          box-shadow: 0 0 30px #dfdddd;
+}
+
+@media screen and (max-width: 900px) {
+  html body main .works .works-container .portfolio a .portfolio-background-image {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html body main .works .works-container .portfolio a .portfolio-background-image {
+    height: 250px;
+  }
+}
+
+html body main .works .works-container .portfolio a .portfolio-background-image .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 15%;
+  display: none;
+}
+
+html body main .works .works-container .portfolio a .portfolio-background-image .title h2 {
+  z-index: 1;
+  font-size: 20px;
+  text-align: center;
+  line-height: 0.95em;
+  font-weight: bold;
+  color: #272343;
+  text-shadow: 0 0 0.1em black;
+}
+
+html body main .works .works-container .portfolio a .portfolio-background-image .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 15%;
+  display: none;
+}
+
+html body main .works .works-container .portfolio a .portfolio-background-image .description h3 {
+  z-index: 1;
+  font-size: 15px;
+  text-align: center;
+  line-height: 0.95em;
+  font-weight: bold;
+  color: #272343;
+  text-shadow: 0 0 0.1em black;
+}
+
+html body main .works .works-container .portfolio a .portfolio-background-image .active {
+  display: block;
+  z-index: 100;
+  position: relative;
+}
+
+html body main .works .works-container .portfolio a .portfolio-background-image2 {
+  background-image: url("/image/myportfolio-screenshot2.png");
+}
+
+html body main .service {
+  background-color: #0F0F0F;
+  margin-bottom: 50px;
+  padding-bottom: 80px;
+  color: #fffffe;
+}
+
+html body main .service i {
+  font-size: 60px;
+}
+
+@media screen and (max-width: 600px) {
+  html body main .service i {
+    font-size: 35px;
+  }
+}
+
+html body main .service h1 {
+  font-size: 60px;
+  padding-left: 10px;
+  font-family: 'Caveat', "cursive";
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  html body main .service h1 {
+    font-size: 35px;
+  }
+}
+
+html body main .service .wrapper {
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 87%;
+}
+
+@media screen and (max-width: 900px) {
+  html body main .service .wrapper {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html body main .service .wrapper {
+    margin-left: 7%;
+    margin-right: 7%;
+    width: 86%;
+  }
+}
+
+html body main .service .wrapper ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 600px) {
+  html body main .service .wrapper ul {
+    display: block;
+  }
+}
+
+html body main .service .wrapper ul li {
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  html body main .service .wrapper ul li:not(:last-child) {
+    margin-bottom: 70px;
+  }
+}
+
+html body main .service .wrapper ul li .service-image-container {
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  html body main .service .wrapper ul li .service-image-container {
+    padding-bottom: 20px;
+  }
+}
+
+html body main .service .wrapper ul li .service-image-container img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 900px) {
+  html body main .service .wrapper ul li .service-image-container img {
+    width: 150px;
+  }
+}
+
+html body main .service .wrapper ul li .service-title {
+  text-align: center;
+  padding-bottom: 25px;
+  font-size: 40px;
+  color: #e6e6e6;
+}
+
+@media screen and (max-width: 900px) {
+  html body main .service .wrapper ul li .service-title {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html body main .service .wrapper ul li .service-title {
+    padding-bottom: 20px;
+  }
+}
+
+html body main .service .wrapper ul li .service-container {
+  padding: 5%;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 5px #dfdddd;
+          box-shadow: 0 0 5px #dfdddd;
+  border-radius: 10px;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 1200px) {
+  html body main .service .wrapper ul li .service-container {
+    height: 315px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html body main .service .wrapper ul li .service-container {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html body main .service .wrapper ul li .service-container {
+    height: 350px;
+  }
+}
+
+html body main .service .wrapper ul li .service-container .service-description {
+  padding-bottom: 30px;
+  font-size: 1.3vw;
+  line-height: 2vw;
+  letter-spacing: 3px;
+  color: #e6e6e6;
+}
+
+@media screen and (max-width: 1200px) {
+  html body main .service .wrapper ul li .service-container .service-description {
+    font-size: 1.5vw;
+    line-height: 2.3vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html body main .service .wrapper ul li .service-container .service-description {
+    font-size: 10px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html body main .service .wrapper ul li .service-container .service-description {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+html body main .service .wrapper ul li .service-container .price-container {
+  text-align: center;
+}
+
+html body main .service .wrapper ul li .service-container .price-container .price-rough-standard,
+html body main .service .wrapper ul li .service-container .price-container .price {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  color: #e6e6e6;
+}
+
+@media screen and (max-width: 1200px) {
+  html body main .service .wrapper ul li .service-container .price-container .price-rough-standard,
+  html body main .service .wrapper ul li .service-container .price-container .price {
+    font-size: 1.4vw;
+    line-height: 1.8vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html body main .service .wrapper ul li .service-container .price-container .price-rough-standard,
+  html body main .service .wrapper ul li .service-container .price-container .price {
+    font-size: 8px;
+    line-height: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html body main .service .wrapper ul li .service-container .price-container .price-rough-standard,
+  html body main .service .wrapper ul li .service-container .price-container .price {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+html body main .service .wrapper ul li:first-child {
+  margin-right: 1.5%;
+}
+
+html body main .service .wrapper ul li:last-child {
+  margin-left: 1.5%;
+}
+
+html body main .service .wrapper .attention {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 18px;
+  color: #e6e6e6;
+  font-weight: bold;
+}
+
+html body main .flow {
+  background-color: #0F0F0F;
+  margin-bottom: 50px;
+  padding-bottom: 80px;
+  color: #fffffe;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 280px;
+}
+
+@media screen and (max-width: 1200px) {
+  html body main .flow {
+    padding-bottom: 120px;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
+
+html body main .flow i {
+  font-size: 60px;
+}
+
+@media screen and (max-width: 600px) {
+  html body main .flow i {
+    font-size: 35px;
+  }
+}
+
+html body main .flow h1 {
+  font-size: 60px;
+  padding-left: 10px;
+  font-family: 'Caveat', "cursive";
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  html body main .flow h1 {
+    font-size: 35px;
+  }
+}
+
+html body main .flow .wrapper {
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 5px #dfdddd;
+          box-shadow: 0 0 5px #dfdddd;
+  border-radius: 10px;
+}
+
+html body main .flow .wrapper ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px 20px;
+}
+
+@media screen and (max-width: 900px) {
+  html body main .flow .wrapper ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+html body main .flow .wrapper ul li {
+  width: 25%;
+}
+
+@media screen and (max-width: 900px) {
+  html body main .flow .wrapper ul li {
+    width: 180px;
+    padding-bottom: 50px;
+  }
+}
+
+html body main .flow .wrapper ul li .flow-image-container {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+html body main .flow .wrapper ul li .flow-image-container img {
+  width: 25%;
+  border-radius: 50%;
+}
+
+html body main .flow .wrapper ul li .flow-title {
+  text-align: center;
+  font-size: 1.5vw;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+@media screen and (max-width: 900px) {
+  html body main .flow .wrapper ul li .flow-title {
+    font-size: 16px;
+  }
+}
+
+html body main .flow .wrapper ul li .flow-title::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 12px;
+  height: 1px;
+  text-align: center;
+  background-color: #ededf1;
+}
+
+html body main .flow .wrapper ul li .flow-description {
+  font-size: 1vw;
+  padding-top: 15px;
+  line-height: 1.5vw;
+}
+
+@media screen and (max-width: 900px) {
+  html body main .flow .wrapper ul li .flow-description {
+    font-size: 10px;
+    line-height: 15px;
+  }
+}
+
+html body main .flow .wrapper ul .arrow-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body main .flow .wrapper ul .arrow-wrapper i {
+  font-size: 3vw;
+}
+
+html body footer {
+  background-color: #0F0F0F;
+  margin-bottom: 50px;
+  padding-bottom: 80px;
+  color: #e6e6e6;
+  margin-bottom: 0;
+  padding-bottom: 1000px;
+  padding: 100px 5% 50px;
+  border-top: 2px solid #e6e6e6;
+}
+
+@media screen and (max-width: 1200px) {
+  html body footer {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+}
+
+html body footer .section-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html body footer .section-wrapper .contact-wrapper p {
+  font-size: 1vw;
+  line-height: 1.4vw;
+}
+
+html body footer .section-wrapper .contact-wrapper p:nth-child(2) {
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  html body footer .section-wrapper .contact-wrapper p {
+    font-size: 15px;
+    line-height: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html body footer .section-wrapper .contact-wrapper p {
+    font-size: 10px;
+    line-height: 15px;
+  }
+}
+
+html body footer .section-wrapper ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 1200px) {
+  html body footer .section-wrapper ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  html body footer .section-wrapper ul li {
+    padding-bottom: 15px;
+  }
+}
+
+html body footer .section-wrapper ul li:first-child {
+  padding-right: 30px;
+}
+
+html body footer .section-wrapper ul li:nth-child(n + 2) {
+  padding-right: 15px;
+}
+
+html body footer .section-wrapper ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  color: #e6e6e6;
+}
+
+html body footer .section-wrapper ul li a p {
+  font-size: 20px;
+}
+
+html body footer .section-wrapper ul li a p:nth-child(n + 2) {
+  font-family: 'Caveat', "cursive";
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 900px) {
+  html body footer .section-wrapper ul li a p {
+    font-size: 15px;
+  }
+}
+
+html body footer .section-wrapper ul li a i {
+  font-size: 10px;
+}
+
+html body footer .copyright {
+  text-align: right;
+  font-size: 1vw;
+  padding-top: 80px;
+}
+
+@media screen and (max-width: 1200px) {
+  html body footer .copyright {
+    padding-top: 40px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
