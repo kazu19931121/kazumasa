@@ -1,0 +1,948 @@
+@mixin main-background-color{
+    background-color:#0F0F0F;
+}
+
+@mixin headline-color{
+    color:#fffffe;
+}
+
+@mixin headline-font{
+    font-family: 'Caveat', "cursive";
+    text-transform: uppercase;
+}
+
+@mixin paragraph-color{
+    color:#e6e6e6;
+}
+
+@mixin wrap-setting{
+    background-color:rgba(black, 0.6);
+    box-shadow: 0 0 5px rgb(223, 221, 221);
+    border-radius: 10px;
+}
+
+@mixin between-section-margin{
+    margin-bottom: 50px;
+    padding-bottom: 80px;
+}
+
+@mixin paragraph-font{
+    font-family: "Hannari";
+}
+
+$breakpoint-down: (
+  'xs': 'screen and (max-width: 320px)',
+  'sm': 'screen and (max-width: 375px)',
+  'md': 'screen and (max-width: 600px)',
+  'lg': 'screen and (max-width: 900px)',
+  'xl': 'screen and (max-width: 1200px)',
+) !default;
+
+@mixin mq-down($breakpoint) {
+    @media #{map-get($breakpoint-down, $breakpoint)} {
+      @content;
+    }
+  }
+
+  $breakpoint-up: (
+    'xs': 'screen and (min-width: 320px)',
+    'sm': 'screen and (min-width: 375px)',
+    'md': 'screen and (min-width: 600px)',
+    'lg': 'screen and (min-width: 900px)',
+    'xl': 'screen and (min-width: 1200px)',
+  ) !default;
+  
+  @mixin mq-up($breakpoint) {
+      @media #{map-get($breakpoint-up, $breakpoint)} {
+        @content;
+      }
+    }
+
+html{
+    font-size: 62.5%;
+body {
+    .main-background-image{
+        background-image: url("https://kazu19931121.github.io/kazumasa/tree/main/image/main-background-image.jpg");
+        background-size: contain;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    main {
+        @include paragraph-font;
+        
+        .common-title {
+            padding-top: 230px;
+            padding-bottom: 165px;
+            display: flex;
+            justify-content: center;
+            @include headline-color;
+            @include mq-down('xl'){
+                    padding-top: 120px;
+                    padding-bottom: 90px;
+            }
+        }
+        
+        .eyecatch {
+            @include between-section-margin;
+            margin-bottom: 0;
+            @include headline-font;
+            @include headline-color;
+            .top-background-image {
+                background-image: url("https://kazu19931121.github.io/kazumasa/tree/main/image/eyecatch-background-image.jpg");
+                background-position: center;
+                background-size: cover;
+                height: 950px;
+                width: 100%;
+                font-size: 100px;
+                text-align: left;
+                @include mq-down('xl') {
+                    background-image: url("https://kazu19931121.github.io/kazumasa/tree/main/image/eyecatch-background-image-phone.jpg");
+                    height: 800px;
+                }
+                @include mq-down('md'){
+                    height: 700px;
+                }
+                p{
+                    @include paragraph-font;
+                    font-size: 2.5vw;
+                    line-height: 4vw;
+                    padding-left: 5%;
+                    font-family: 'Yomogi', cursive;
+                    opacity: 0;
+                    @include mq-down('xl'){
+                        font-size: 3.6vw;
+                        line-height: 5.3vw;
+                    }
+                    @include mq-down('lg'){
+                        font-size: 4vw;
+                        line-height: 5.3vw;
+                    }
+                    @include mq-down('md'){
+                        font-size: 4vw;
+                        line-height: 5.5vw;        
+                    }
+                    @include mq-down('sm'){
+                        font-size: 18px;
+                        line-height: 30px;
+                    }
+                }
+                    .first{
+                        padding-top: 200px;
+                        @include mq-down('xl'){
+                            padding-top: 100px;
+                        }
+                        @include mq-down('lg'){
+                            padding-top: 75px;
+                        }
+                        
+                    }
+                    
+                    .third{
+                        padding-top: 70px;
+                    }
+            }
+        }
+
+        .introduction {
+            @include main-background-color;
+            @include between-section-margin;
+
+                i {
+                    font-size: 60px;
+                    @include mq-down('md'){
+                        font-size: 35px;
+                    }
+                }
+
+                h1 {
+                    font-size: 60px;
+                    padding-left: 10px;
+                    @include headline-font;
+                    @include mq-down('md'){
+                        font-size: 35px;
+                    }
+                }
+
+            .myimage {
+                text-align: center;
+
+                img {
+                    width: 300px;
+                    border-radius: 50%;
+                    @include mq-down('lg'){
+                        width: 250px;
+                    }
+                }
+            }
+
+            .common-container {
+                .common-subtitle {
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 35px;
+                    padding-bottom: 35px;
+                    @include headline-color;
+
+                    i {
+                        font-size: 40px;
+                        @include mq-down('md'){
+                            font-size: 28px;
+                        }
+                    }
+
+                    h2 {
+                        font-size: 40px;
+                        padding-left: 7px;
+                        @include headline-font;
+                        @include mq-down('md'){
+                            font-size: 28px;
+                        }
+                    }
+                }
+
+                .description-textbox {
+                    padding: 20px 5% 40px;
+                    @include wrap-setting;
+                    margin-left: 5%;
+                    margin-right: 5%;
+                    width: 80%;
+                    box-shadow: 0 0 5px rgb(223, 221, 221);
+                    .first{
+                        p{
+                            &:nth-child(2){
+                                font-size: 17px;
+                                padding-top: 20px;
+                            }
+                            @include mq-down('xl'){
+                                &:nth-child(2){
+                                    font-size: 1.6vw;
+                                }
+                            }
+                            @include mq-down('md'){
+                                &:nth-child(2){
+                                    font-size: 2.1vw;
+                                }
+                            }
+                        }
+                    }
+                    .description {
+                        text-align: center;
+                        @include paragraph-color;
+                        
+                        p {
+                            
+                            font-size: 20px;
+                            line-height: 40px;
+                                
+                            @include mq-down('xl'){
+                                font-size: 1.8vw;
+                                line-height: 3vw;
+                            }
+                            @include mq-down('md'){
+                                font-size: 2.3vw;
+                                line-height: 3.4vw;
+                            }
+
+                            span {
+                                color: red;
+                            }
+                            &:nth-child(2) {
+                                line-height: 1vw;
+                                @include mq-down('xl'){
+                                line-height: 1.8vw;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .myskill {
+            @include main-background-color;
+            @include between-section-margin;
+
+                i {
+                    font-size: 60px;
+                    @include mq-down('md'){
+                        font-size: 35px;
+                    }
+                }
+
+                h1 {
+                    font-size: 60px;
+                    padding-left: 10px;
+                    @include headline-font;
+                    @include mq-down('md'){
+                        font-size: 35px;
+                    }
+
+                }
+
+            .skill-container {
+                padding-top: 50px;
+                padding-bottom: 15px;
+                @include wrap-setting;
+                margin-left: 10%;
+                margin-right: 10%;
+                width: 80%;
+                @include mq-down('lg'){
+                    margin-left: 5%;
+                    margin-right: 5%;
+                    width: 90%;
+                }
+                ul {
+                    display: flex;
+                    justify-content: center;
+                    padding-left: 3%;
+                    padding-right: 3%;
+                    flex-wrap: wrap;
+                    li {
+                        width: 250px;
+                        height: auto;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        margin-left: 30px;
+                        @include mq-down('xl'){
+                            width: 150px;
+                            margin-left: 20px;
+
+                        }
+                        @include mq-down('md'){
+                            width: 100px;
+                            margin-left: 10px;
+
+                        }
+                        .image-wrapper {
+                            background-color: rgb(233, 232, 232);
+                            width: auto;
+                            height: 300px;
+                            display: flex;
+                            align-items: center;
+                            padding: 20px;
+                            box-shadow: 0 0 30px rgb(223, 221, 221);
+                            @include mq-down('xl'){
+                                height: 150px; 
+                            }
+                            @include mq-down('md'){
+                                height: 80px; 
+                            }
+                            img {
+                                width: 100%;
+
+                            }
+                        }
+
+                        .level-wrapper {
+                            text-align: center;
+                            padding-top: 15px;
+                            padding-bottom: 25px;
+
+                            p {
+                                @include paragraph-color;
+                                font-size: 1vw;
+                                @include mq-down('xl'){
+                                    font-size: 1.3vw;
+                                }
+                                @include mq-down('md'){
+                                    font-size: 1.6vw;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .strength {
+            @include main-background-color;
+            @include between-section-margin;
+            
+                i {
+                    font-size: 60px;
+                    @include mq-down('md'){
+                        font-size: 35px;
+                    }
+                }
+
+                h1 {
+                    font-size: 60px;
+                    padding-left: 10px;
+                    @include headline-font;
+                    @include mq-down('md'){
+                        font-size: 35px;
+                    }
+                }
+
+            .strength-container {
+                margin-left: 10%;
+                margin-right: 10%;
+                width: 80%;
+                @include wrap-setting;
+                @include mq-down('xl'){
+                    margin-left: 5%;
+                    margin-right: 5%;
+                    width: 90%;
+                }
+                ul {
+                    display: flex;
+                    width: 90%;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    li {
+                        width: 80%;
+                        padding-top: 30px;
+                        padding-bottom: 30px;
+
+                        &:nth-child(n + 2) {
+                            margin-left: 5%;
+                        }
+
+                        .strength-subtitle {
+                            display: flex;
+                            justify-content: center;
+                            padding-bottom: 30px;
+                            position: relative;
+
+                            &::before {
+                                content: "";
+                                width: 100%;
+                                position: absolute;
+                                left: 0;
+                                bottom: 12px;
+                                height: 1px;
+                                text-align: center;
+                                background-color: rgb(237, 237, 241);
+                            }
+
+                            p {
+                                padding-left: 7px;
+                                font-size: 1.6vw;
+                                @include paragraph-color;
+                                @include mq-down('xl'){
+                                    font-size: 1.9vw;
+                                }
+                            }
+
+                            i {
+                                font-size: 1.6vw;
+                                @include paragraph-color;
+                                @include mq-down('xl'){
+                                    font-size: 1.9vw;
+                                }
+                            }
+                        }
+
+                        .descripion-textbox {
+                            padding-top: 20px;
+
+                            p {
+                                font-size: 1.2vw;
+                                line-height: 2.7vw;
+                                @include paragraph-color;
+                                @include mq-down('xl'){
+                                    font-size: 1.5vw;
+                                    line-height: 3vw;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .works {
+            @include main-background-color;
+            @include between-section-margin;
+            @include headline-color;
+        
+                i {
+                    font-size: 60px;
+                    @include mq-down('md'){
+                        font-size: 35px;
+                    }
+                }
+
+                h1 {
+                    font-size: 60px;
+                    padding-left: 10px;
+                    @include headline-font;
+                    @include mq-down('md'){
+                        font-size: 35px;
+                    }
+                }
+
+            .works-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 5%;
+                margin-right: 5%;
+                width: 84%;
+                padding-top: 100px;
+                padding-bottom: 100px;
+                padding-left: 3%;
+                padding-right: 3%;
+                @include mq-down('xl'){
+                    display: block;
+                }
+                @include mq-down('md'){
+                    padding-top: 0;
+                    padding-bottom: 0;
+                }
+                @include mq-up('md'){
+                    @include wrap-setting;                    
+                }
+                .portfolio {
+                    width: 40%;
+                    @include mq-down('xl'){
+                    width: 70%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                @include mq-down('lg'){
+                    width: 80%;
+                }
+                @include mq-down('md'){
+                    width: 100%;
+                }
+                    &:first-child {
+                        margin-right: 3%;
+                        @include mq-down('xl'){
+                            margin-right: 0;
+                            margin-bottom: 40px;
+                        }
+                    }
+
+                    &:last-child {
+                        margin-left: 3%;
+                        @include mq-down('xl'){
+                            margin-left: 0;
+                        }
+                    }
+
+                    a {
+                        text-decoration: none;
+                        display: block;
+                        position: relative;
+                        
+                        &::before {
+                            position: absolute;
+                            content: "";
+                            top: 0;
+                            bottom: 0;
+                            width: 0;
+                            display: block;
+                            transition: 0.8s;
+                            animation-timing-function: ease-out;
+                            background-color: rgba($color: #eff0f3, $alpha: 0.9);
+                        }
+
+                        &:hover {
+                            &::before {
+                                width: 100%;
+                            }
+                        }
+
+                        .portfolio-background-image {
+                            background-image: url("https://kazu19931121.github.io/kazumasa/tree/main/image/myportfolio-screenshot.png");
+                            background-size: cover;
+                            background-position: center;
+                            height: 350px;
+                            box-shadow: 0 0 30px rgb(223, 221, 221);
+                            
+                            @include mq-down('lg'){
+                                height: 300px;
+                            }
+                            @include mq-down('md'){
+                                height: 250px;
+                            }
+                            .title {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                padding-top: 15%;
+                                display: none;
+
+                                h2 {
+                                    z-index: 1;
+                                    font-size: 20px;
+                                    text-align: center;
+                                    line-height: 0.95em;
+                                    font-weight: bold;
+                                    color: #272343;
+                                    text-shadow: 0 0 0.1em rgba(0, 0, 0, 1);
+                                }
+                            }
+
+                            .description {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                padding-top: 15%;
+                                display: none;
+
+                                h3 {
+                                    z-index: 1;
+                                    font-size: 15px;
+                                    text-align: center;
+                                    line-height: 0.95em;
+                                    font-weight: bold;
+                                    color: #272343;
+                                    text-shadow: 0 0 0.1em rgba(0, 0, 0, 1);
+                                }
+                            }
+
+                            .active {
+                                display: block;
+                                z-index: 100;
+                                position: relative;
+                            }
+                        }
+
+                        .portfolio-background-image2 {
+                            background-image: url("https://kazu19931121.github.io/kazumasa/tree/main/image/myportfolio-screenshot2.png");
+                        }
+                    }
+                }
+            }
+        }
+
+        .service {
+            @include main-background-color;
+            @include between-section-margin;
+            @include headline-color;
+
+                i {
+                    font-size: 60px;
+                    @include mq-down('md'){
+                        font-size: 35px;
+                    }
+                }
+
+                h1 {
+                    font-size: 60px;
+                    padding-left: 10px;
+                    @include headline-font;
+                    @include mq-down('md'){
+                        font-size: 35px;
+                    }
+                }
+
+            .wrapper {
+                margin-left: 5%;
+                margin-right: 5%;
+                width: 87%;
+                @include mq-down('lg'){
+                    margin-left: 2.5%;
+                    margin-right: 2.5%;
+                    width: 95%;
+                }
+                @include mq-down('md'){
+                    margin-left: 7%;
+                    margin-right: 7%;
+                    width: 86%;
+                }
+                ul {
+                    display: flex;
+                    @include mq-down('md'){
+                        display: block;
+                    }
+                    li {
+                        width: 100%;
+                        &:not(:last-child){
+                            @include mq-down('md'){
+                                margin-bottom: 70px;
+                            }
+                        }
+                        .service-image-container {
+                            padding-bottom: 30px;
+                            text-align: center;
+                            @include mq-down('md'){
+                                padding-bottom: 20px;
+                            }
+                            img {
+                                width: 200px;
+                                border-radius: 50%;
+                                @include mq-down('lg'){
+                                    width: 150px;
+                                }
+                            }
+                        }
+
+                        .service-title {
+                            text-align: center;
+                            padding-bottom: 25px;
+                            font-size: 40px;
+                            @include paragraph-color;
+                            @include mq-down('lg'){
+                                font-size: 28px;
+                            }
+                            @include mq-down('md'){
+                                padding-bottom: 20px;
+                            }
+                        }
+
+                        .service-container {
+                            padding: 5%;
+                            @include wrap-setting;
+                            height: 350px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            @include mq-down('xl'){
+                                height: 315px;
+                            }
+                            @include mq-down('lg'){
+                                height: 300px;
+                            }
+                            @include mq-down('md'){
+                                height: 350px;
+                            }
+                            .service-description {
+                                padding-bottom: 30px;
+                                font-size: 1.3vw;
+                                line-height:2vw;
+                                letter-spacing: 3px;
+                                @include paragraph-color;
+                                @include mq-down('xl'){
+                                    font-size: 1.5vw;
+                                    line-height: 2.3vw;
+                                }
+                                @include mq-down('lg'){
+                                    font-size: 10px;
+                                    line-height: 20px;
+                                }
+                                @include mq-down('md'){
+                                    font-size: 20px;
+                                    line-height: 30px;
+                                }
+                            }
+
+                            .price-container {
+                                text-align: center;
+
+                                .price-rough-standard,
+                                .price {
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                    letter-spacing: 2px;
+                                    @include paragraph-color;
+                                    @include mq-down('xl'){
+                                        font-size: 1.4vw;
+                                        line-height: 1.8vw;
+                                    }
+                                    @include mq-down('lg'){
+                                        font-size: 8px;
+                                        line-height: 15px;
+                                    }
+                                    @include mq-down('md'){
+                                        font-size: 15px;
+                                        line-height: 20px;
+                                    }
+                                }
+                            }
+                        }
+
+                        &:first-child {
+                            margin-right: 1.5%;
+                        }
+
+                        &:last-child {
+                            margin-left: 1.5%;
+                        }
+                    }
+                }
+
+                .attention {
+                    text-align: center;
+                    padding-top: 50px;
+                    font-size: 18px;
+                    @include paragraph-color;
+                    font-weight: bold;
+                }
+            }
+        }
+
+
+
+
+        .flow {
+            @include main-background-color;
+            @include between-section-margin;
+            @include headline-color;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-bottom: 280px;
+            @include mq-down('xl'){
+                padding-bottom: 120px;
+                padding-left: 2%;
+                padding-right: 2%;
+            }            
+                i {
+                    font-size: 60px;
+                    @include mq-down('md'){
+                        font-size: 35px;
+                    }
+                }
+
+                h1 {
+                    font-size: 60px;
+                    padding-left: 10px;
+                    @include headline-font;
+                    @include mq-down('md'){
+                        font-size: 35px;
+                    }
+                }
+
+                .wrapper{
+                    @include wrap-setting;
+                    ul{
+                        display: flex;
+                        padding: 40px 20px;
+                        @include mq-down('lg'){
+                            flex-wrap: wrap;
+                            justify-content: center;
+                        }
+                        li{
+                            width: 25%;
+                            @include mq-down('lg'){
+                                width: 180px;
+                                padding-bottom: 50px;
+                            }
+                            .flow-image-container{
+                                text-align: center;
+                                padding-bottom:20px;
+                                img{
+                                    width: 25%;
+                                    border-radius: 50%;
+                                }
+                            }
+                            .flow-title{
+                                text-align: center;
+                                font-size: 1.5vw;
+                                padding-bottom: 30px;
+                                position: relative;
+                                @include mq-down('lg'){
+                                    font-size: 16px;
+                                }
+                                &::before {
+                                    content: "";
+                                    width: 100%;
+                                    position: absolute;
+                                    left: 0;
+                                    bottom: 12px;
+                                    height: 1px;
+                                    text-align: center;
+                                    background-color: rgb(237, 237, 241);
+                                }
+                            }
+                            .flow-description{
+                                font-size: 1vw;
+                                padding-top: 15px;
+                                line-height: 1.5vw;
+                                @include mq-down('lg'){
+                                    font-size: 10px;
+                                    line-height: 15px;
+                                }
+                            }
+                        }
+                        .arrow-wrapper{
+                            display: flex;
+                            align-items: center;                            
+                            i{
+                                font-size: 3vw;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+
+        }
+
+        footer{
+            @include main-background-color;
+            @include between-section-margin;
+            @include paragraph-color;
+            margin-bottom: 0;
+            padding-bottom: 1000px;
+            padding: 100px 5% 50px;
+            border-top: 2px solid #e6e6e6;
+            @include mq-down('xl'){
+                padding-top: 60px;
+                padding-bottom: 30px;
+            }
+            .section-wrapper{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .contact-wrapper{
+                    p{
+                        font-size: 1vw;
+                        line-height: 1.4vw;
+                        &:nth-child(2){
+                            padding-bottom: 10px;
+                        }
+                        @include mq-down('xl'){
+                            font-size: 15px;
+                            line-height: 20px;
+                            padding-right: 20px;
+                        }
+                        @include mq-down('lg'){
+                            font-size: 10px;
+                            line-height: 15px;
+                        }
+                    }
+                }
+                ul{
+                    display: flex;
+                    @include mq-down('xl'){
+                        flex-wrap: wrap;
+                    }
+                    li{
+                        @include mq-down('xl'){
+                            padding-bottom: 15px;
+                        }
+                        &:first-child{
+                            padding-right: 30px;
+                        }
+                        &:nth-child(n + 2){
+                            padding-right: 15px;
+                        }
+                        a{
+                            display: flex;
+                            cursor: pointer;
+                            @include paragraph-color;
+                            
+                            p{
+                                font-size: 20px;
+                                &:nth-child(n + 2){
+                                    @include headline-font;
+                                }
+                                @include mq-down('lg'){
+                                    font-size: 15px;
+                                }
+                            }
+                            i{
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            .copyright{
+                text-align: right;
+                font-size: 1vw;
+                padding-top: 80px;
+                @include mq-down('xl'){
+                    padding-top: 40px;
+                }
+            }
+        }
+    }
+}
