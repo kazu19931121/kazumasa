@@ -62,7 +62,7 @@ html{
     font-size: 62.5%;
 body {
     .main-background-image{
-        background-image: url("https://kazu19931121.github.io/kazumasa/image/main-background-image.jpg");
+        background-image: url("https://github.com/kazu19931121/kazumasa/blob/main/image/main-background-image.jpg");
         background-size: contain;
         background-position: center;
         background-attachment: fixed;
@@ -88,7 +88,7 @@ body {
             @include headline-font;
             @include headline-color;
             .top-background-image {
-                background-image: url("https://kazu19931121.github.io/kazumasa/image/eyecatch-background-image.jpg");
+                background-image: url("https://github.com/kazu19931121/kazumasa/blob/main/image/eyecatch-background-image.jpg");
                 background-position: center;
                 background-size: cover;
                 height: 950px;
@@ -96,7 +96,7 @@ body {
                 font-size: 100px;
                 text-align: left;
                 @include mq-down('xl') {
-                    background-image: url("https://kazu19931121.github.io/kazumasa/image/eyecatch-background-image-phone.jpg");
+                    background-image: url("https://github.com/kazu19931121/kazumasa/blob/main/image/eyecatch-background-image-phone.jpg");
                     height: 800px;
                 }
                 @include mq-down('md'){
@@ -547,7 +547,7 @@ body {
                         }
 
                         .portfolio-background-image {
-                            background-image: url("https://kazu19931121.github.io/kazumasa/image/myportfolio-screenshot.png");
+                            background-image: url("https://github.com/kazu19931121/kazumasa/blob/main/image/myportfolio-screenshot.png");
                             background-size: cover;
                             background-position: center;
                             height: 350px;
@@ -603,7 +603,7 @@ body {
                         }
 
                         .portfolio-background-image2 {
-                            background-image: url("https://kazu19931121.github.io/kazumasa/image/myportfolio-screenshot2.png");
+                            background-image: url("https://github.com/kazu19931121/kazumasa/blob/main/image/myportfolio-screenshot2.png");
                         }
                     }
                 }
