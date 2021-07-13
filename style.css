@@ -3,7 +3,7 @@ html {
 }
 
 html body .main-background-image {
-  background-image: url("/image/main-background-image.jpg");
+  background-image: url("https://kazu19931121.github.io/kazumasa/image/main-background-image.jpg");
   background-size: contain;
   background-position: center;
   background-attachment: fixed;
@@ -42,7 +42,7 @@ html body main .eyecatch {
 }
 
 html body main .eyecatch .top-background-image {
-  background-image: url("/image/eyecatch-background-image.jpg");
+  background-image: url("https://kazu19931121.github.io/kazumasa/image/eyecatch-background-image.jpg");
   background-position: center;
   background-size: cover;
   height: 950px;
@@ -53,7 +53,7 @@ html body main .eyecatch .top-background-image {
 
 @media screen and (max-width: 1200px) {
   html body main .eyecatch .top-background-image {
-    background-image: url("/image/eyecatch-background-image-phone.jpg");
+    background-image: url("https://kazu19931121.github.io/kazumasa/image/eyecatch-background-image-phone.jpg");
     height: 800px;
   }
 }
@@ -682,7 +682,7 @@ html body main .works .works-container .portfolio a:hover::before {
 }
 
 html body main .works .works-container .portfolio a .portfolio-background-image {
-  background-image: url("/image/myportfolio-screenshot.png");
+  background-image: url("https://kazu19931121.github.io/kazumasa/image/myportfolio-screenshot.png");
   background-size: cover;
   background-position: center;
   height: 350px;
@@ -757,7 +757,7 @@ html body main .works .works-container .portfolio a .portfolio-background-image 
 }
 
 html body main .works .works-container .portfolio a .portfolio-background-image2 {
-  background-image: url("/image/myportfolio-screenshot2.png");
+  background-image: url("https://kazu19931121.github.io/kazumasa/image/myportfolio-screenshot2.png");
 }
 
 html body main .service {
